@@ -1,147 +1,187 @@
-# Website Tiket Konser (Hartix)
+# Website Tiket Konser Berbasis Web
 
-<p align="center">
-  <strong>Sistem Pemesanan Tiket Konser Berbasis Web Menggunakan Laravel</strong>
-</p>
-
-<p align="center">
-Project pembelajaran yang dikembangkan menggunakan framework Laravel dan database MySQL.
-</p>
-
-# Tampilan Aplikasi
-
-## Halaman Beranda
-
-![Halaman Beranda](image.png)
-
-# Deskripsi
-
-Website Tiket Konser (Hartix) merupakan aplikasi berbasis web yang dirancang untuk memudahkan pengguna dalam memperoleh informasi konser dan melakukan pemesanan tiket secara online. Melalui aplikasi ini, pengguna dapat melihat daftar konser yang tersedia, memperoleh informasi mengenai jadwal konser, serta melakukan proses pemesanan tiket dengan lebih mudah.
-
-Selain menyediakan layanan bagi pengguna, aplikasi ini juga dilengkapi dengan halaman administrator yang digunakan untuk mengelola data konser, data pengguna, serta informasi yang ditampilkan pada website.
-
-Project ini dikembangkan sebagai media pembelajaran dalam pengembangan aplikasi web menggunakan framework Laravel.
-
-# Fitur Utama
-
-### User
-
-- Login akun
-- Registrasi akun
-- Melihat halaman beranda
-- Melihat informasi konser
-- Melihat detail konser
-- Melakukan pemesanan tiket
-- Logout
-
-### Administrator
-
-- Login Admin
-- Dashboard Admin
-- Mengelola data konser
-- Mengelola data pengguna
-- Mengelola data pemesanan tiket
-- Logout
-
-# Teknologi yang Digunakan
-
-| Teknologi | Keterangan |
-|-----------|------------|
-| Laravel | Framework Backend |
-| PHP | Bahasa Pemrograman |
-| MySQL | Database |
-| HTML5 | Struktur Halaman |
-| CSS3 | Tampilan Website |
-| Bootstrap | User Interface |
-| JavaScript | Interaksi Website |
+Sistem pemesanan tiket konser berbasis website yang dikembangkan menggunakan Laravel untuk memudahkan pengguna melihat informasi konser dan melakukan pemesanan tiket secara online.
 
 ---
 
-# 📁 Struktur Project
+## Struktur Folder
 
 ```text
-app/
-bootstrap/
-config/
-database/
-public/
-resources/
-routes/
-storage/
-tests/
-
-artisan
-composer.json
-package.json
-README.md
+Esharani1103-TiketKonser/
+│
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   └── Middleware/
+│   └── Models/
+│
+├── bootstrap/
+├── config/
+├── database/
+│   ├── migrations/
+│   └── seeders/
+│
+├── public/
+│
+├── resources/
+│   ├── views/
+│   ├── css/
+│   └── js/
+│
+├── routes/
+│   └── web.php
+│
+├── storage/
+├── tests/
+│
+├── artisan
+├── composer.json
+├── package.json
+├── vite.config.js
+└── README.md
 ```
-# Cara Menjalankan Project
 
-### 1. Clone Repository
+---
+
+## Frontend
+
+### Teknologi
+
+- Blade Template
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
+- Vite
+
+### Halaman
+
+| Halaman | Keterangan |
+|----------|------------|
+| Beranda | Menampilkan informasi konser |
+| Login | Halaman autentikasi pengguna |
+| Register | Pendaftaran akun baru |
+| Daftar Konser | Menampilkan daftar konser |
+| Detail Konser | Informasi detail konser |
+| Pemesanan Tiket | Form pemesanan tiket |
+
+### Fitur Frontend
+
+- Tampilan responsif
+- Login dan Register
+- Informasi konser
+- Detail konser
+- Pemesanan tiket
+- Navigasi yang mudah digunakan
+
+---
+
+## Backend
+
+### Teknologi
+
+- Laravel
+- PHP
+- MySQL
+
+### Database
+
+| Tabel | Fungsi |
+|--------|--------|
+| users | Data pengguna |
+| concerts | Data konser |
+| bookings | Data pemesanan tiket |
+
+### Panel Admin
+
+| Menu | Fungsi |
+|------|--------|
+| Dashboard | Ringkasan data |
+| Data Konser | CRUD konser |
+| Data Pengguna | Kelola pengguna |
+| Data Pemesanan | Kelola pemesanan tiket |
+
+---
+
+## Instalasi
+
+### Persyaratan
+
+- PHP 8.x
+- Composer
+- Node.js
+- MySQL / XAMPP
+
+### Langkah Instalasi
 
 ```bash
+# Clone repository
 git clone https://github.com/Esharani1103/Esharani1103-TiketKonser.git
-```
 
-### 2. Masuk ke Folder Project
-
-```bash
+# Masuk ke folder project
 cd Esharani1103-TiketKonser
-```
 
-### 3. Install Dependency
-
-```bash
+# Install dependency
 composer install
-```
+npm install
 
-### 4. Copy File Environment
-
-```bash
+# Copy file environment
 cp .env.example .env
-```
 
-### 5. Generate Application Key
-
-```bash
+# Generate key
 php artisan key:generate
-```
 
-### 6. Konfigurasi Database
-
-Atur koneksi database pada file `.env`.
-
-### 7. Jalankan Migrasi
-
-```bash
+# Jalankan migrasi
 php artisan migrate
-```
 
-### 8. Jalankan Server
+# Build asset
+npm run build
 
-```bash
+# Jalankan aplikasi
 php artisan serve
 ```
 
-Kemudian buka browser
+Akses aplikasi:
 
 ```
 http://127.0.0.1:8000
 ```
 
-# Tujuan Project
+---
 
-Project ini dibuat sebagai media pembelajaran untuk memahami proses pengembangan aplikasi web menggunakan framework Laravel, mulai dari pengelolaan data, autentikasi pengguna, hingga implementasi sistem pemesanan tiket konser.
+## Tampilan Aplikasi
 
-# Tim Pengembang
+### Halaman Beranda
 
-Project ini dikerjakan secara berkelompok sebagai bagian dari tugas perkuliahan.
+![Beranda](beranda.png)
 
-# Lisensi
+---
 
-Project ini dibuat untuk keperluan pembelajaran dan portofolio. Seluruh source code hanya digunakan sebagai dokumentasi hasil pengembangan aplikasi.
+## Tujuan Project
 
-# Author
+Project ini dikembangkan sebagai media pembelajaran untuk memahami pengembangan aplikasi web menggunakan framework Laravel, mulai dari proses autentikasi pengguna, pengelolaan data, hingga implementasi sistem pemesanan tiket konser.
+
+---
+
+## Tim Pengembang
+
+Project ini dikembangkan secara berkelompok sebagai bagian dari tugas perkuliahan.
+
+---
+
+## Troubleshooting
+
+| Error | Solusi |
+|--------|--------|
+| Composer error | Jalankan `composer install` |
+| Database tidak terkoneksi | Periksa konfigurasi `.env` |
+| CSS tidak tampil | Jalankan `npm run build` |
+| Route tidak ditemukan | Jalankan `php artisan route:clear` |
+| View tidak ditemukan | Jalankan `php artisan view:clear` |
+
+---
+
+## Author
 
 **Esharani Janifitz**
 
