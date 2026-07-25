@@ -12,7 +12,7 @@ Project pembelajaran yang dikembangkan menggunakan framework Laravel dan databas
 
 ## Halaman Beranda
 
-![Halaman Beranda](screenshots/beranda.png)
+![Halaman Beranda](image.png)
 
 # Deskripsi
 
